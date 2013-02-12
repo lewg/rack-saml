@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('./lib/rack-saml/version', File.dirname(__FILE__))
+$:.push File.expand_path("../lib", __FILE__)
+require 'rack-saml/version'
 
 Gem::Specification.new do |gem|
   gem.add_dependency 'ruby-saml', '~> 0.7.1'
